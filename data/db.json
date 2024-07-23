@@ -1,0 +1,147 @@
+{
+  "animes": [
+    {
+      "id": 1,
+      "name": "Jujutsu Kaisen",
+      "shortName": "JJK",
+      "categories": [1, 2, 3],
+      "emision": { "start": "2020-10-10", "end": "" },
+      "image": "https://example.com/images/jujutsu_kaisen.jpg",
+      "rating": 4.5,
+      "votes": 312,
+      "description": "A story about a high school student who joins a secret organization to fight supernatural beings.",
+      "episodes": 24,
+      "studio": {
+        "name": "MAPPA",
+        "location": "Japan"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "name": "Yuji Itadori",
+          "role": "Protagonist",
+          "voiceActor": {
+            "name": "Junya Enoki",
+            "age": 32,
+            "nationality": "Japanese"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Megumi Fushiguro",
+          "role": "Supporting",
+          "voiceActor": {
+            "name": "Yuma Uchida",
+            "age": 31,
+            "nationality": "Japanese"
+          }
+        }
+      ],
+      "themes": ["Friendship", "Courage", "Sacrifice"]
+    },
+    {
+      "id": 2,
+      "name": "Attack on Titan",
+      "shortName": "AOT",
+      "categories": [2, 4],
+      "emision": { "start": "2013-04-07", "end": "2021-03-28" },
+      "image": "https://example.com/images/attack_on_titan.jpg",
+      "rating": 4.8,
+      "votes": 1500,
+      "description": "Humans are nearly exterminated by giant creatures. The survivors retreat behind walls in a desperate bid to survive.",
+      "episodes": 75,
+      "studio": {
+        "name": "Wit Studio",
+        "location": "Japan"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "name": "Eren Yeager",
+          "role": "Protagonist",
+          "voiceActor": {
+            "name": "Yuki Kaji",
+            "age": 35,
+            "nationality": "Japanese"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Mikasa Ackerman",
+          "role": "Supporting",
+          "voiceActor": {
+            "name": "Yui Ishikawa",
+            "age": 32,
+            "nationality": "Japanese"
+          }
+        }
+      ],
+      "themes": ["Survival", "War", "Freedom"]
+    },
+    {
+      "id": 3,
+      "name": "My Hero Academia",
+      "shortName": "MHA",
+      "categories": [2, 3, 5],
+      "emision": { "start": "2016-04-03", "end": "" },
+      "image": "https://example.com/images/my_hero_academia.jpg",
+      "rating": 4.7,
+      "votes": 1040,
+      "description": "A world where nearly everyone has superpowers, and a young boy dreams of becoming the greatest hero.",
+      "episodes": 88,
+      "studio": {
+        "name": "Bones",
+        "location": "Japan"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "name": "Izuku Midoriya",
+          "role": "Protagonist",
+          "voiceActor": {
+            "name": "Daiki Yamashita",
+            "age": 30,
+            "nationality": "Japanese"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Katsuki Bakugo",
+          "role": "Supporting",
+          "voiceActor": {
+            "name": "Nobuhiko Okamoto",
+            "age": 34,
+            "nationality": "Japanese"
+          }
+        }
+      ],
+      "themes": ["Heroism", "Determination", "Growth"]
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Seinen"
+    },
+    {
+      "id": 2,
+      "name": "Shonen"
+    },
+    {
+      "id": 3,
+      "name": "Supernatural"
+    },
+    {
+      "id": 4,
+      "name": "Drama"
+    },
+    {
+      "id": 5,
+      "name": "Action"
+    },
+    {
+      "id": 6,
+      "name": "Adventure"
+    }
+  ]
+}
