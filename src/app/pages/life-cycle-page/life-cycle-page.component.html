@@ -1,0 +1,35 @@
+<h1>Ciclo de vida de Componentes</h1>
+
+<p>Esta pagina hace de componente padre.</p>
+
+<div class="mb-3">
+  <label for="message" class="form-label">Mensaje</label>
+  <div class="input-group">
+    <input
+      #inputMessage
+      id="message"
+      type="text"
+      class="form-control"
+      placeholder="Escribe tu mensaje aquí"
+    />
+    <button (click)="onAddMessage(inputMessage)" class="btn btn-primary">
+      Add Message
+    </button>
+    <button (click)="onClearHistory()" class="btn btn-danger">
+      Clear Histroy
+    </button>
+  </div>
+</div>
+
+<h5>History</h5>
+<div class="scrollable-content">
+  <pre *ngFor="let item of statusMessage">{{ item | json }}</pre>
+</div>
+
+<ng-container *ngFor="let msg of listMessages; let i = index">
+  <cycle-item [message]="msg" (onChangeCycle)="fillStatusMessage($event)" />
+  <button (click)="onDelete(i)" class="btn btn-warning">Delete</button>
+</ng-container>
+
+<h5>List Messages</h5>
+<pre>{{ listMessages | json }}</pre>
