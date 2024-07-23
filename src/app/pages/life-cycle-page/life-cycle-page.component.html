@@ -21,15 +21,27 @@
   </div>
 </div>
 
+<div class="mb-3">
+  <button (click)="onForceChange()" class="btn btn-outline-warning">
+    Force onchange
+  </button>
+</div>
+
 <h5>History</h5>
-<div class="scrollable-content">
+<div class="mb-3 scrollable-content">
   <pre *ngFor="let item of statusMessage">{{ item | json }}</pre>
 </div>
 
 <ng-container *ngFor="let person of listPersons; let i = index">
   <cycle-item [person]="person" (onChangeCycle)="fillStatusMessage($event)" />
-  <button (click)="onDelete(i)" class="btn btn-warning">Delete</button>
+  <button (click)="onDelete(i)" class="mb-3 mt-3 btn btn-warning">
+    Delete
+  </button>
 </ng-container>
+
+<div *ngIf="listPersons.length > 0" class="mb-3 input-group">
+  <input class="form-control" type="text" [(ngModel)]="listPersons[0].name" />
+</div>
 
 <h5>List Messages</h5>
 <pre>{{ listPersons | json }}</pre>

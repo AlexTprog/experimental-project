@@ -27,4 +27,12 @@ export class LifeCyclePageComponent {
   fillStatusMessage(msg: string) {
     this.statusMessage.push(msg);
   }
+
+  onForceChange() {
+    if (this.listPersons.length === 0) throw Error('list length is zero');
+    this.listPersons[0] = {
+      name: 'pablito',
+      age: 88,
+    };
+  }
 }

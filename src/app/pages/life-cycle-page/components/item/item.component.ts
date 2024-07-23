@@ -51,6 +51,7 @@ export class ItemComponent
         changesString += `${propName}: currentValue = ${change.currentValue}, previousValue = ${change.previousValue}; `;
       }
     }
+    console.warn(changes);
     this.onChangeCycle.emit(changesString);
   }
   ngOnInit(): void {
