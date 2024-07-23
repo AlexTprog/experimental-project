@@ -22,5 +22,9 @@ export class AppComponent {
       path: 'life-cycle',
       name: 'Pruebas ciclo de vida',
     },
+    {
+      path: 'reactive-form',
+      name: 'Formulario reactivo',
+    },
   ];
 }
