@@ -13,12 +13,13 @@ import {
   Output,
   SimpleChanges,
 } from '@angular/core';
+import { Person } from '../../interfaces/person';
 
 @Component({
   selector: 'cycle-item',
   template: `
-    <div class="bg-danger text-white radius">
-      <input type="text" class="form-control" [(ngModel)]="message" />
+    <div *ngIf="person" class="bg-danger text-white radius">
+      <input type="text" class="form-control" [(ngModel)]="person.name" />
     </div>
   `,
   styles: `
@@ -38,7 +39,7 @@ export class ItemComponent
     AfterViewChecked,
     OnDestroy
 {
-  @Input() message: string = '';
+  @Input() person?: Person;
 
   @Output() onChangeCycle = new EventEmitter<string>();
 

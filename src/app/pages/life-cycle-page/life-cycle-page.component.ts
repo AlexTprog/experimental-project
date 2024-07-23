@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Person } from './interfaces/person';
 
 @Component({
   templateUrl: './life-cycle-page.component.html',
@@ -6,17 +7,17 @@ import { Component } from '@angular/core';
 })
 export class LifeCyclePageComponent {
   statusMessage: string[] = [];
-  listMessages: string[] = [];
+  listPersons: Person[] = [];
 
   constructor() {}
 
   onAddMessage(input: HTMLInputElement) {
-    this.listMessages.push(input.value ?? '');
+    this.listPersons.push({ name: input.value ?? '', age: 30 });
     input.value = '';
   }
 
   onDelete(index: number) {
-    this.listMessages.splice(index, 1);
+    this.listPersons.splice(index, 1);
   }
 
   onClearHistory() {

@@ -26,10 +26,10 @@
   <pre *ngFor="let item of statusMessage">{{ item | json }}</pre>
 </div>
 
-<ng-container *ngFor="let msg of listMessages; let i = index">
-  <cycle-item [message]="msg" (onChangeCycle)="fillStatusMessage($event)" />
+<ng-container *ngFor="let person of listPersons; let i = index">
+  <cycle-item [person]="person" (onChangeCycle)="fillStatusMessage($event)" />
   <button (click)="onDelete(i)" class="btn btn-warning">Delete</button>
 </ng-container>
 
 <h5>List Messages</h5>
-<pre>{{ listMessages | json }}</pre>
+<pre>{{ listPersons | json }}</pre>
