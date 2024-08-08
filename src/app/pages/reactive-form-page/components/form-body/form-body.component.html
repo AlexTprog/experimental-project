@@ -1,0 +1,55 @@
+<div>
+  @if(animeCurrent && animeForm){
+
+  <form [formGroup]="animeForm" (ngSubmit)="onSubmit($event)">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input formControlName="name" class="form-control" type="text" />
+    </div>
+    <div class="mb-3">
+      <label for="shortName" class="form-label">shortName</label>
+      <input formControlName="shortName" class="form-control" type="text" />
+    </div>
+    <!-- TODO: Change to multiselect -->
+    <div class="mb-3">
+      <label for="categories" class="form-label">shortName</label>
+      <input formControlName="categories" class="form-control" type="text" />
+    </div>
+
+    <div class="mb-3" formGroupName="emision">
+      <!-- <label for="start" class="form-label">Start</label>
+      <input formControlName="start" class="form-control" type="date" /> -->
+
+      <label for="end" class="form-label">End</label>
+      <input formControlName="end" class="form-control" type="date" />
+    </div>
+
+    <div class="mb-3">
+      <label for="image" class="form-label">Rating</label>
+      <input formControlName="image" class="form-control" type="text" />
+    </div>
+
+    <div class="mb-3">
+      <label for="rating" class="form-label">Rating</label>
+      <input formControlName="rating" class="form-control" type="number" />
+    </div>
+    <div class="mb-3">
+      <label for="votes" class="form-label">Votes</label>
+      <input formControlName="votes" class="form-control" type="number" />
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <input formControlName="description" class="form-control" type="text" />
+    </div>
+    <div class="mb-3">
+      <label for="episodes" class="form-label">Episodes</label>
+      <input formControlName="episodes" class="form-control" type="number" />
+    </div>
+  </form>
+  <pre>{{ animeForm.value | json }}</pre>
+  }@else{
+  <div class="w-100 text-center">
+    <h1>Selecciona un anime</h1>
+  </div>
+  }
+</div>

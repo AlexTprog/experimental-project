@@ -3,11 +3,18 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HomePageModule } from './pages/home-page/home-page.module';
 import { LifeCyclePageModule } from './pages/life-cycle-page/life-cycle-page.module';
+import { ReactiveFormPageModule } from './pages/reactive-form-page/reactive-form-page.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule, CommonModule, HomePageModule, LifeCyclePageModule],
+  imports: [
+    RouterModule,
+    CommonModule,
+    HomePageModule,
+    LifeCyclePageModule,
+    ReactiveFormPageModule,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

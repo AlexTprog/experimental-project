@@ -1,0 +1,12 @@
+reactive-list-items {
+  width: 200px;
+  height: 70vh;
+  overflow: auto;
+}
+
+reactive-form-body {
+  width: auto;
+  flex-grow: 1;
+  height: 70vh;
+  overflow: auto;
+}

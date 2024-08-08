@@ -1,0 +1,7 @@
+<div class="anime-list">
+  <ul>
+    <li *ngFor="let anime of animeArray" (click)="onShowAnime(anime)">
+      {{ anime.name }}
+    </li>
+  </ul>
+</div>
